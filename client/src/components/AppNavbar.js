@@ -16,7 +16,13 @@ const AppNavbar = (props) => {
 
 	return (
 		<div>
-			<Navbar color="dark" light expand="md" dark>
+			<Navbar
+				color="dark"
+				light
+				expand="md"
+				dark
+				style={{ marginBottom: "2rem" }}
+			>
 				<NavbarBrand href="/">Shopping List</NavbarBrand>
 				<NavbarToggler onClick={toggle} />
 				<Collapse isOpen={isOpen} navbar>
