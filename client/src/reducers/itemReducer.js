@@ -1,4 +1,3 @@
-import uuid from "uuid/dist/v4";
 import {
 	GET_ITEMS,
 	ADD_ITEM,
