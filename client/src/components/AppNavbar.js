@@ -8,6 +8,8 @@ import {
 	NavItem,
 	NavLink,
 } from "reactstrap";
+import RegisterModal from "./auth/RegisterModal";
+import Logout from "./auth/Logout";
 
 const AppNavbar = (props) => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -28,9 +30,10 @@ const AppNavbar = (props) => {
 				<Collapse isOpen={isOpen} navbar>
 					<Nav className="ml-auto" navbar>
 						<NavItem>
-							<NavLink href="https://github.com/AshishMhrzn10/MERN-todo-traversy-">
-								GitHub
-							</NavLink>
+							<RegisterModal />
+						</NavItem>
+						<NavItem>
+							<Logout />
 						</NavItem>
 					</Nav>
 				</Collapse>
